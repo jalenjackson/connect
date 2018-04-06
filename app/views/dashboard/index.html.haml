@@ -1,0 +1,6 @@
+= render 'shared/navbar'
+
+%input{ type: 'hidden', value: current_user.last_search_term_title, class: 'user-last-search-term-hidden' }
+%input{ type: 'hidden', value: current_user.last_search_term_location, class: 'user-last-search-term-city-hidden' }
+
+= javascript_pack_tag 'dashboard/index'
